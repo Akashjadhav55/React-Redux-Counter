@@ -20,6 +20,8 @@ const Reducer = (state = IntialState, action) => {
         case "DEC" : return state - 1
         default : return state
     }
+
+    
 }
 
 export const store = legacy_createStore(Reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
